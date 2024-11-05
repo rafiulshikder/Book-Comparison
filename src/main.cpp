@@ -97,7 +97,7 @@ public:
 
         for (const string &bookName : bookNames)
         {
-            ifstream file(bookName);
+            ifstream file("books/"+ bookName);
             if (file.is_open())
             {
                 list<string> words;
